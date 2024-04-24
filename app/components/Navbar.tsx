@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="bg-[#FFF7E2] relative w-[100%]">
-      <div className="flex justify-center items-center px-[123px] py-[29px]">
+      <div className="flex justify-center items-center md:justify-between px-[123px] py-[29px]">
       <RxHamburgerMenu
           className="md:hidden cursor-pointer absolute left-[2rem]"
           color="text-green-800"
@@ -27,15 +27,17 @@ const Navbar: React.FC = () => {
             Home
           </a>
           <a href="#" className="text-green-800 hover:text-green-600">
-            About
+            Find Doctors
           </a>
           <a href="#" className="text-green-800 hover:text-green-600">
-            Services
+            About Us
           </a>
-          <a href="#" className="text-green-800 hover:text-green-600">
-            Contact
-          </a>
+         
         </nav>
+        <div className='hidden md:flex justify-center items-center gap-[16px]'>
+          <div className='border border-[#3A643B] rounded-[11px] text-[#3A643B] w-[95px] h-[40px] flex justify-center items-center text-[14px] bg-[#FFF7E2] font-semibold'>Login</div>
+          <div className=' rounded-[11px] text-[#FFF7E2] w-[95px] h-[40px] flex justify-center items-center text-[14px] bg-[#3A643B] font-semibold'>Sign-up</div>
+        </div>
       </div>
       {/* Mobile menu */}
       {isMenuOpen && (
