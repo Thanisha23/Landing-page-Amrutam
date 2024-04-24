@@ -3,7 +3,7 @@ import Image from 'next/image'
 import info from '../lib/infoCard'
 const InfoCards:React.FC = () => {
   return ( 
-<div className='flex justify-center items-center'>
+<div className='flex justify-center items-center pb-[5rem]'>
 <div className='px-[14px]  grid grid-cols-2 gap-[27px]'>  
   {info.map((infoCard) => (
     <div key={infoCard.id} className='py-[11px]  text-center w-[160px] h-[225px] rounded-[12px] border border-[#E4E4E4] relative'>

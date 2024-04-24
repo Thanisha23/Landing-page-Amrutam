@@ -3,6 +3,7 @@ import Feature from "./components/Feature";
 import InfoCards from "./components/InfoCards";
 import Navbar from "./components/Navbar";
 import SectionFive from "./components/SectionFive";
+import SectionSix from "./components/SectionSix";
 import SectionThree from "./components/SectionThree";
 
 
@@ -35,6 +36,7 @@ export default function Home() {
 <SectionThree />
 <InfoCards />
 <SectionFive />
+<SectionSix />
     </div>
   );
 }
